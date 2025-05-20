@@ -8,4 +8,5 @@ import br.com.tiagobnoronha.rocket_api_curso.entities.CourseEntity;
 
 public interface CourseRepository extends JpaRepository<CourseEntity,UUID> {
 
+    boolean existsByName(String name); 
 }
